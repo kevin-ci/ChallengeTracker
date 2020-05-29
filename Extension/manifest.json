@@ -1,0 +1,24 @@
+{
+  "name": "Code Inst. Intercom Extension",
+  "description": "Kevin is very very cool.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "http://www.google.co.in/*",
+        "https://www.google.co.in/*",
+        "https://repl.it/*"
+      ],
+      "js": [
+        "jquery.js",
+        "myscript.js"
+      ]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
